@@ -49,7 +49,7 @@ def market_holidays(year):
 
                 elif (
                     date_obj.new_month == 1
-                    and date_obj.day_of_week == "Sunday"
+                    and date_obj.day_of_week() == "Sunday"
                     and date_obj.new_day == 1
                 ):
                     print(
@@ -154,7 +154,7 @@ def market_holidays(year):
 
                 elif (
                     date_obj.new_month == 12
-                    and date_obj.day_of_week == "Sunday"
+                    and date_obj.day_of_week() == "Sunday"
                     and date_obj.new_day == 25
                 ):
                     print(
